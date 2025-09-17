@@ -1,0 +1,236 @@
+# 1.greet world
+print(" hello world")
+print("\n", "hello my dear")
+
+# 2.print your name
+print("AKHILA")
+
+#3.print your name from user input
+name= input("enter your name:")
+print("your name is :", name)
+
+#4.print 2 numbers
+num1= input("enter your first number")
+num2= input("enter your second number")
+print(" first number", num1)
+print(" second number",num2)
+
+#5.sum of 2 numbers
+num1= int(input("enter your first number"))
+num2= int(input("enter your second number"))
+sum=num1 + num2
+print("sum of 2 values", sum)
+
+#6.print your full name
+a=input(" enter the first name")
+b=input(" enter the last name")
+c=a+b
+print("your full name is ", c)
+
+#7.swap 2 numbers without third variable
+a=10
+b=20
+a=a+b
+b=a-b
+a=a-b
+print("a:",a)
+print("b:",b)
+
+#8.swap 2 numbers with third variable
+a=10
+b=20
+temp=a
+a=b
+b=temp
+print(" after swapping:",a)
+print(" after swapping:",b)
+
+#9.print primitive data types
+a=10
+b=3.14
+c=True
+print(" int:",a)
+print( " float:",b )
+print("bool:",c)
+
+#10.print  non primitive data types 
+my_list=[10,20,30,40]
+my_tuple=(1,2,3,4)
+my_set={100,200,300,400}
+my_dict={"name":"pandu"}
+print("list:",my_list)
+print("tuple:",my_tuple)
+print("set:",my_set)
+print("dict:",my_dict)
+
+#11.print square of a number
+a=int(input("enter the value:"))
+sqr=a*a
+print("square:", sqr)
+
+#12.print average of 3 numbers
+num1= int(input("enter your first number"))
+num2= int(input("enter your second number"))
+num3= int(input("enter your third number"))
+avg=(a+b+c)/2
+print("average of three numbers:",avg)
+
+#13.simple multiplication operation
+num=int(input("enter the value:"))
+result=num*10
+print("the result:",result)
+
+#14.develop simple calculator
+num1= int(input("enter your first number"))
+num2= int(input("enter your second number"))
+operator=input("enter the operator(+,-,*,/):")
+if operator=='+':
+    print("result:",num1+num2)
+elif operator=='-':
+    print("result:",num1-num2)
+elif operator=='*':
+    print("result:",num1*num2)
+elif operator=='/':
+    print("result:",num1/num2)
+else:
+    print("error")
+
+#15.sum of n natural numbers
+n=int(input("enter the n value"))
+total=n*(n+1)/2
+print(total)
+
+#16.arithmetic operation
+a=10
+b=20
+print("addition of 2 numbers:",a+b)
+print("subtraction of 2 numbers:",a-b)
+print("multiplication of 2 numbers:",a*b)
+print("division of 2 numbers:",a/b)
+
+#17.logicaloperator
+a=12
+b=20
+print(a>0 and b>15)
+print(a>15 or b<5)
+print(not(a==10))
+if(a>0 and b>0):
+    print("true for and operation")
+elif(a>0 or b>0):
+    print("true for or operation")
+elif(a!=0 and b!=0):
+    print("true for not opaeration")
+else:
+    print("error")
+
+#18.comparision opeartor
+theory=float(input("enter theory marks:"))
+prac=float(input("enterr parc marks:"))
+if(theory>+35 and prac>+15) or ((theory+prac)>60):
+    print("passed")
+else:
+    print("failed")
+
+#19.positive,negative or zero number
+a=float(input("enter the number"))
+if(a>0):
+  print("positive number")
+elif(a<0):
+   print("negative number")
+else:
+    print("zero")
+
+#20.even or odd number
+a=int(input("enter a number:"))
+if(a%2==0):
+    print("even number")
+else:
+    print("odd number")
+
+#21.divisible by 5 and 11
+num=int(input("enter a number:"))
+if(num % 5 == 0 and num % 11 == 0):
+    print("divisible by 5 and 11")
+else:
+    print("not divisible by 5 and 11")
+
+#22.check the age group given by user
+age=int(input("enter the age"))
+if age<13:
+    print("child")
+elif(age>=13 and age<=20):
+    print("teenager")
+else:
+    print("adult")
+
+#23.check the garde using marks
+marks=int(input("enter the marks"))
+if marks>=90:
+    print("your garde is 'a' \n excellent")
+elif(marks>=70 and marks<=80 ):
+    print("your grade is 'b' \n good ")
+elif(marks>=50 and marks<=70 ):
+    print("your grade is 'c' \n average ")
+elif(marks>=40 and marks<=50 ):
+    print("your grade is 'd' \n improve yourself ")
+else:
+    print("you failed \n work hard ")
+
+#24.print week of day
+choice=int(input("enter your choice"))
+if choice==1:
+    print("sunday")
+elif choice==2:
+    print("monday")
+elif choice==3:
+    print("tuesday")
+elif choice==4:
+    print("wednesday")
+elif choice==5:
+    print("thursday")
+elif choice==6:
+    print("friday")
+else:
+    print("saturday")
+
+#25.check username and password credentials
+username=str(input("enter your username"))
+password=int(input("enter your password"))
+if (username=="ayesha" and password==1234):
+    print("true")
+else:
+    print("false")
+
+#26.convert min to sec
+min= int(input("enter the  value:"))
+sec=min*60
+print("seconds:",sec)
+
+
+#27.print floating points
+a=float(input("enter the value"))
+b=float(input("enter the value"))
+floatc = a*b
+print(floatc)
+
+
+#28.largest of three numbers
+a=int(input("enter a value"))
+b=int(input("enter b value"))
+c=int(input("enter c value"))
+if a>=b and a>=c:
+    print("largest is a")
+elif(b>=a and b>=c):
+    print("largest is b")
+else:
+    print("largest is c")
+
+#29.sum of even numbers
+n=int(input("enter n value"))
+sum=n*(n+1)
+print("sum of n even numbers:",sum)
+
+#30.sum of odd numbers
+n=int(input("enter n value"))
+sum=n**2
+print("sum of n odd numbers:",sum)
