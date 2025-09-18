@@ -1,0 +1,10 @@
+#28.largest of three numbers
+a=int(input("enter a value"))
+b=int(input("enter b value"))
+c=int(input("enter c value"))
+if a>=b and a>=c:
+    print("largest is a")
+elif(b>=a and b>=c):
+    print("largest is b")
+else:
+    print("largest is c")
