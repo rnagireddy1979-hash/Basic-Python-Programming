@@ -1,0 +1,6 @@
+#12.print average of 3 numbers
+num1= int(input("enter your first number"))
+num2= int(input("enter your second number"))
+num3= int(input("enter your third number"))
+avg=(a+b+c)/2
+print("average of three numbers:",avg)
