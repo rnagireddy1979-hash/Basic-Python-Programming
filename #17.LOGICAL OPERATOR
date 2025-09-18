@@ -1,0 +1,14 @@
+#17.logicaloperator
+a=12
+b=20
+print(a>0 and b>15)
+print(a>15 or b<5)
+print(not(a==10))
+if(a>0 and b>0):
+    print("true for and operation")
+elif(a>0 or b>0):
+    print("true for or operation")
+elif(a!=0 and b!=0):
+    print("true for not opaeration")
+else:
+    print("error")
