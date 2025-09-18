@@ -1,0 +1,84 @@
+# Simple restaurant program with login and membership prompt
+
+# Sample users: dictionary with username: password and membership status
+users = {
+    "user1": {"password": "pass123", "member": True},
+    "user2": {"password": "pass456", "member": False},
+}
+
+print("Welcome to Aaradhya Restaurants")
+
+# Login section
+username = input("Enter your login ID: ")
+password = input("Enter your password: ")
+
+if username in users and users[username]["password"] == password:
+    print(f"Hello, {username}!")
+
+    # Check membership status
+    if users[username]["member"]:
+        print("Thank you for being a valued member of Aaradhya Restaurants!")
+    else:
+        print("You are not a member yet.")
+        join = input("Would you like to join our membership for special offers? (yes/no): ").strip().lower()
+        if join == "yes":
+            users[username]["member"] = True
+            print("Welcome to the Aaradhya membership! Enjoy exclusive benefits.")
+        else:
+            print("No worries! You can join anytime.")
+
+    # Menu section
+    while True:
+        print("\nPlease choose your menu:")
+        print("1. Tiffin items")
+        print("2. Lunch meals")
+        print("3. Juice items")
+        print("4. Snack items")
+        print("5. Display all menu items")
+        print("6. Display food prices")
+        print("7. Exit")
+
+        try:
+            menu = int(input("Enter your choice (1-7): "))
+        except ValueError:
+            print("Invalid input! Please enter a number between 1 and 7.")
+            continue
+
+if menu == 1:
+    print("\nTiffin items: Idli, Dosa, Vada, Puri, Chapathi with palli chutney")
+    print("Price: 100 rupees per plate")
+    item = input("Enter your tiffin item: ")
+    print(f"Your {item} tiffin will be served soon!")
+elif menu == 2:
+    print("\nLunch meals: Plain rice with dal, curry and sambar")
+    print("Non-veg options: Chicken biryani, Mutton biryani")
+    print("Price: 1000 rupees per plate")
+    item = input("Enter your lunch meal: ")
+    print(f"Your {item} lunch will be served soon!")
+elif menu == 3:
+    print("\nJuice items: Mango, Grape, Pineapple, Mixed fruit, Lemon with cashew and almond")
+    print("Price: 100 rupees per glass")
+    item = input("Enter your juice item: ")
+    print(f"Your {item} juice will be served soon!")
+elif menu == 4:
+    print("\nSnack items: Panipuri, Samosa, Popcorn, Chat, Cupcakes, Noodles")
+    print("Price: 80 rupees per plate")
+    item = input("Enter your snack item: ")
+    print(f"Your {item} snack will be served soon!")
+elif menu == 5:
+    print("\nMenu items:")
+    print("1. Tiffin items")
+    print("2. Lunch meals")
+    print("3. Juice items")
+    print("4. Snack items")
+elif menu == 6:
+    print("\nPrices:")
+    print("Tiffin items: 100 rupees per plate")
+    print("Lunch meals: 1000 rupees per plate")
+    print("Juice items: 100 rupees per glass")
+    print("Snack items: 80 rupees per plate")
+elif menu == 7:
+    print("Thank you for visiting Aaradhya Restaurants! Goodbye!")
+    break
+else:
+        print("Invalid choice! Please enter a number between 1 and 7.")
