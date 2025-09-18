@@ -1,0 +1,4 @@
+#15.sum of n natural numbers
+n=int(input("enter the n value"))
+total=n*(n+1)/2
+print(total)
