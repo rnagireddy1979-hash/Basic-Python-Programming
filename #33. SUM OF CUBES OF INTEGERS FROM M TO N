@@ -1,0 +1,10 @@
+#33. sum of cubes of integers from m to n
+m=int(input("enter first number"))
+n=int(input("enter second number"))
+sum=0
+if(m>n):
+    return 0
+else:
+    for(int i = m; i<=n; i++)
+    sum=i**3+i**3+i**3
+    return sum
