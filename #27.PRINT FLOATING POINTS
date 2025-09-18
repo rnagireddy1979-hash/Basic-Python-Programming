@@ -1,0 +1,6 @@
+#27.print floating points
+a=float(input("enter the value"))
+b=float(input("enter the value"))
+floatc = a*b
+print(floatc)
+
