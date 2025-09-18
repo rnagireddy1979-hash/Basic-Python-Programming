@@ -1,0 +1,5 @@
+#6.print your full name
+a=input(" enter the first name")
+b=input(" enter the last name")
+c=a+b
+print("your full name is ", c)
