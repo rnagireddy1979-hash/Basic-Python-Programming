@@ -1,0 +1,9 @@
+#10.print  non primitive data types 
+my_list=[10,20,30,40]
+my_tuple=(1,2,3,4)
+my_set={100,200,300,400}
+my_dict={"name":"pandu"}
+print("list:",my_list)
+print("tuple:",my_tuple)
+print("set:",my_set)
+print("dict:",my_dict)
