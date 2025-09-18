@@ -1,0 +1,7 @@
+#18.comparision opeartor
+theory=float(input("enter theory marks:"))
+prac=float(input("enterr parc marks:"))
+if(theory>+35 and prac>+15) or ((theory+prac)>60):
+    print("passed")
+else:
+    print("failed")
