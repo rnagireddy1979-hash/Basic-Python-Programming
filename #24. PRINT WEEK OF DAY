@@ -1,0 +1,16 @@
+#24.print week of day
+choice=int(input("enter your choice"))
+if choice==1:
+    print("sunday")
+elif choice==2:
+    print("monday")
+elif choice==3:
+    print("tuesday")
+elif choice==4:
+    print("wednesday")
+elif choice==5:
+    print("thursday")
+elif choice==6:
+    print("friday")
+else:
+    print("saturday")
