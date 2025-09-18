@@ -1,0 +1,4 @@
+#13.simple multiplication operation
+num=int(input("enter the value:"))
+result=num*10
+print("the result:",result)
